@@ -1,0 +1,5 @@
+{
+    "token": "TOKEN HERE",
+    "prefix": "PREFIX HERE",
+    "mongooseConnectionString": "mongodb+srv://zerobot:zerobot099@cluster0.5zste.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+}
