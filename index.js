@@ -2,7 +2,7 @@ const express = require("express")
 const app = express()
 
 app.get("/", (req, res) => {
- res.send("hi")
+ res.send("Made By ZeroBot Development")
 })
 
 app.listen(3000, () => {
@@ -11,17 +11,23 @@ app.listen(3000, () => {
 
 const Discord = require("discord.js") // otherwise we can't make discord embeds
 const { Client, Collection } = Discord
+const { prefix, token } = require("./config.json")
 
 
 const client = new Client({
     intents: "32767",
 });
+
+
 module.exports = client;
+
+
+
 
 // Global Variables
 client.commands = new Collection();
 client.slashCommands = new Collection();
-client.config = require("./config.json");
+client.config = require("./config.json")
 client.color = require("./color.json")
 
 const simplydjs = require("simply-djs")
@@ -48,8 +54,10 @@ client.on("interactionCreate", async interaction =>{
 })
 
 
+
 // Initializing the project
 require("./handler")(client);
 
+const { mongooseConnectionString } = require("./config.json");
 
-client.login(process.env.token);
+client.login(process.env.token || token);
