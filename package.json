@@ -29,7 +29,7 @@
     "figlet": "^1.5.2",
     "flip-text": "^1.2.0",
     "giphy-api": "^2.0.2",
-    "glob": "^7.1.7",
+    "glob": "^9.1.0",
     "imdb-api": "^4.4.1",
     "leaf-utils": "^1.0.9",
     "mal-scraper": "^2.11.4",
